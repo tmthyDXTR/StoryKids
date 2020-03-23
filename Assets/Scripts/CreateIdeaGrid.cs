@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CreateIdeaGrid : MonoBehaviour
 {
-    [SerializeField] public int N = 4;
+    [SerializeField] public int N = 1;
     [SerializeField] public GameObject ideaSpace;
     [SerializeField] public List<Transform> ideaPositions;
 
@@ -17,7 +17,7 @@ public class CreateIdeaGrid : MonoBehaviour
         // Get spawn positions
         for (int i = 0; i < N; i++)
         {
-            idea.Spawn();
+            idea.Spawn("idea");
 
         }
         Debug.Log("Spawn Grid created");     

@@ -2,14 +2,18 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ClickHiddenIdea
+    - ClickIdea
     - ColourFade
     - CreateIdeaGrid
     - GameManager
     - GameTime
+    - HomeDebugText
     - Idea
+    - IdeaButton
     - IdeaCloud
     - LoadScene
     - RevealIdea
+    - TriggerTrash
     - UpdateIdeaCount
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -70,29 +74,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11192}
     - Class: 114
+      Script: {instanceID: 11250}
+    - Class: 114
       Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12250}
+      Script: {instanceID: 12252}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 13240}
+      Script: {instanceID: 13244}
     - Class: 114
-      Script: {instanceID: 13258}
+      Script: {instanceID: 13262}
     - Class: 114
-      Script: {instanceID: 13548}
+      Script: {instanceID: 13554}
     - Class: 114
-      Script: {instanceID: 13648}
+      Script: {instanceID: 13654}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13930}
     - Class: 114
-      Script: {instanceID: 14192}
+      Script: {instanceID: 14198}
     - Class: 114
-      Script: {instanceID: 14260}
+      Script: {instanceID: 14266}
+    - Class: 114
+      Script: {instanceID: 76422}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,35 +149,41 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11536}
     - Class: 114
-      Script: {instanceID: 12196}
+      Script: {instanceID: 11564}
     - Class: 114
-      Script: {instanceID: 12240}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12362}
+      Script: {instanceID: 12242}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12364}
     - Class: 114
-      Script: {instanceID: 12896}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 13240}
+      Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 13548}
+      Script: {instanceID: 13244}
     - Class: 114
-      Script: {instanceID: 13648}
+      Script: {instanceID: 13412}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13554}
     - Class: 114
-      Script: {instanceID: 14192}
+      Script: {instanceID: 13654}
     - Class: 114
-      Script: {instanceID: 14260}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 14310}
+      Script: {instanceID: 14198}
     - Class: 114
-      Script: {instanceID: 14312}
+      Script: {instanceID: 14266}
     - Class: 114
-      Script: {instanceID: 51840}
+      Script: {instanceID: 14316}
     - Class: 114
-      Script: {instanceID: 54236}
+      Script: {instanceID: 14318}
+    - Class: 114
+      Script: {instanceID: 22156}
+    - Class: 114
+      Script: {instanceID: 30612}
+    - Class: 114
+      Script: {instanceID: 66896}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -277,6 +291,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 6e2bf038a290f439d292b39cff7f5847
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
   - hash:
       serializedVersion: 2
       Hash: 896f4ddc5cbd3f6fa8a70c332cddb47a
@@ -405,7 +425,7 @@ ScriptsOnlyBuild:
     className: SpriteShape
   - hash:
       serializedVersion: 2
-      Hash: a83f5481766c7103dd1fbf769e0339f8
+      Hash: 3dd10b4117c2e43a3c1eb0a91b4bbbba
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Idea
@@ -465,7 +485,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: c7d6b2d2a67d3720a33b7d639f449ff7
+      Hash: cc0871410c64a2c2085443e90fe15c56
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ClickHiddenIdea
@@ -559,6 +579,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UpdateIdeaCount
   - hash:
       serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
@@ -693,7 +719,7 @@ ScriptsOnlyBuild:
     className: CreateIdeaGrid
   - hash:
       serializedVersion: 2
-      Hash: 8f26affa7f5283b9ad56ecb460e24855
+      Hash: d30378d1e3e9673933fd7fa2bfac164e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IdeaCloud
@@ -711,18 +737,30 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 82944738a77a259449f9c56ffa80387b
+      Hash: b7cd62df16b8052bed358461dd7deea5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: GameManager
+    className: ClickIdea
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: f8e2f113719976f25e15e296735844b9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: UpdateIdeaCount
+    className: IdeaButton
+  - hash:
+      serializedVersion: 2
+      Hash: 8a265cdd95f89c6ee57686bdee7cbf5f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerTrash
+  - hash:
+      serializedVersion: 2
+      Hash: 013c94e80632ecfee5ab0f9842ebecd7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HomeDebugText
   platform: 13
   scenePathNames:
   - Assets/Scenes/StartScene.unity
   - Assets/Scenes/StoryScene.unity
-  playerPath: C:/Users/tmthy/Unity Projects/StoryKids/Story Kids/StoryKids.apk
+  playerPath: C:/Users/tmthy/Unity Projects/StoryKids/Story Kids/StorYmagine.apk

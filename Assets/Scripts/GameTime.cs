@@ -19,5 +19,8 @@ public class GameTime : MonoBehaviour
     {
         float t = Time.time - startTime;
         timerText.text = t.ToString("f0");
+
+        
     }
+
 }

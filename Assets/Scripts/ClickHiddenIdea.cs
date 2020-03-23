@@ -9,7 +9,8 @@ public class ClickHiddenIdea : MonoBehaviour
 
     public RevealIdea RI;
 
-    public string type; // animal, mood, ...
+    public string[] ideaTypes;
+    public string type; // animal, mood, icon, job...
     void Start()
     {
         ideaManager = GameObject.Find("IdeaManager");
@@ -18,6 +19,17 @@ public class ClickHiddenIdea : MonoBehaviour
         btn.onClick.AddListener(TaskOnClick);
 
         RI = ideaManager.GetComponent<RevealIdea>();
+
+        if (this.transform.parent.tag != "Mood")
+        {
+            ideaTypes = new string[3] { "animal", "icon", "job" };
+            int randIndex = (int)Random.Range(0f, 3f);
+            type = ideaTypes[randIndex];
+        }        
+        else
+        {
+            type = "mood";
+        }
     }
 
     void TaskOnClick()
