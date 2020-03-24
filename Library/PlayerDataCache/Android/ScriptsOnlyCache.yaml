@@ -1,10 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BookButton
+    - BookManager
     - ClickHiddenIdea
-    - ClickIdea
     - ColourFade
     - CreateIdeaGrid
+    - DragHandler
     - GameManager
     - GameTime
     - HomeDebugText
@@ -12,8 +14,11 @@ ScriptsOnlyBuild:
     - IdeaButton
     - IdeaCloud
     - LoadScene
+    - PanelController
+    - RecycleButton
+    - RecycleTrigger
     - RevealIdea
-    - TriggerTrash
+    - Selection
     - UpdateIdeaCount
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -72,35 +77,35 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11250}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11536}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12252}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12910}
     - Class: 114
-      Script: {instanceID: 13244}
+      Script: {instanceID: 13020}
     - Class: 114
-      Script: {instanceID: 13262}
+      Script: {instanceID: 13256}
     - Class: 114
-      Script: {instanceID: 13554}
+      Script: {instanceID: 13274}
     - Class: 114
-      Script: {instanceID: 13654}
+      Script: {instanceID: 13566}
     - Class: 114
-      Script: {instanceID: 13776}
+      Script: {instanceID: 13666}
     - Class: 114
-      Script: {instanceID: 13930}
+      Script: {instanceID: 13788}
     - Class: 114
-      Script: {instanceID: 14198}
+      Script: {instanceID: 13942}
     - Class: 114
-      Script: {instanceID: 14266}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 76422}
+      Script: {instanceID: 14278}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,49 +146,59 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11250}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11536}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11564}
+      Script: {instanceID: 11566}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 11952}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 11988}
     - Class: 114
-      Script: {instanceID: 12364}
+      Script: {instanceID: 12002}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12250}
     - Class: 114
-      Script: {instanceID: 13244}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 13412}
+      Script: {instanceID: 12716}
     - Class: 114
-      Script: {instanceID: 13554}
+      Script: {instanceID: 12748}
     - Class: 114
-      Script: {instanceID: 13654}
+      Script: {instanceID: 12910}
     - Class: 114
-      Script: {instanceID: 13776}
+      Script: {instanceID: 13256}
     - Class: 114
-      Script: {instanceID: 14198}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 14266}
+      Script: {instanceID: 13566}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 13666}
     - Class: 114
-      Script: {instanceID: 14318}
+      Script: {instanceID: 13788}
     - Class: 114
-      Script: {instanceID: 22156}
+      Script: {instanceID: 14210}
     - Class: 114
-      Script: {instanceID: 30612}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 66896}
+      Script: {instanceID: 14328}
+    - Class: 114
+      Script: {instanceID: 14330}
+    - Class: 114
+      Script: {instanceID: 32382}
+    - Class: 114
+      Script: {instanceID: 35664}
+    - Class: 114
+      Script: {instanceID: 35672}
+    - Class: 114
+      Script: {instanceID: 37954}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -383,10 +398,28 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
+      Hash: 04a03dbd09118fadc7092a6079a01f67
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Selection
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: db3691cbb4555f1ea1df281085bbe866
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragHandler
+  - hash:
+      serializedVersion: 2
+      Hash: f8e2f113719976f25e15e296735844b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IdeaButton
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -491,6 +524,12 @@ ScriptsOnlyBuild:
     className: ClickHiddenIdea
   - hash:
       serializedVersion: 2
+      Hash: 968536aee8ca6c278440db5f9d8c076d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RecycleButton
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -513,6 +552,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 013c94e80632ecfee5ab0f9842ebecd7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HomeDebugText
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -737,28 +782,28 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: b7cd62df16b8052bed358461dd7deea5
+      Hash: e9455beeb312e550c061606e9bd16e5d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: ClickIdea
+    className: RecycleTrigger
   - hash:
       serializedVersion: 2
-      Hash: f8e2f113719976f25e15e296735844b9
+      Hash: 1e8902bb9c86c1aa12135d15149eee4e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: IdeaButton
+    className: BookManager
   - hash:
       serializedVersion: 2
-      Hash: 8a265cdd95f89c6ee57686bdee7cbf5f
+      Hash: 3a1f663798ba36b5dd0659fba91d779a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TriggerTrash
+    className: BookButton
   - hash:
       serializedVersion: 2
-      Hash: 013c94e80632ecfee5ab0f9842ebecd7
+      Hash: 78e84a43b5fb7018e9204ac99807c348
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: HomeDebugText
+    className: PanelController
   platform: 13
   scenePathNames:
   - Assets/Scenes/StartScene.unity

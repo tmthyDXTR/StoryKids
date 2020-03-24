@@ -63,10 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BookButton.cs" />
+    <Compile Include="Assets\Scripts\BookManager.cs" />
     <Compile Include="Assets\Scripts\ClickHiddenIdea.cs" />
-    <Compile Include="Assets\Scripts\ClickIdea.cs" />
     <Compile Include="Assets\Scripts\ColourFade.cs" />
     <Compile Include="Assets\Scripts\CreateIdeaGrid.cs" />
+    <Compile Include="Assets\Scripts\DragHandler.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GameTime.cs" />
     <Compile Include="Assets\Scripts\HomeDebugText.cs" />
@@ -74,9 +76,13 @@
     <Compile Include="Assets\Scripts\IdeaButton.cs" />
     <Compile Include="Assets\Scripts\IdeaCloud.cs" />
     <Compile Include="Assets\Scripts\LoadScene.cs" />
+    <Compile Include="Assets\Scripts\Options.cs" />
+    <Compile Include="Assets\Scripts\PanelController.cs" />
+    <Compile Include="Assets\Scripts\RecycleButton.cs" />
+    <Compile Include="Assets\Scripts\RecycleTrigger.cs" />
     <Compile Include="Assets\Scripts\RevealIdea.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
-    <Compile Include="Assets\Scripts\TriggerTrash.cs" />
+    <Compile Include="Assets\Scripts\Selection.cs" />
     <Compile Include="Assets\Scripts\UpdateIdeaCount.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
